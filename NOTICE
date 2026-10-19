@@ -1,0 +1,17 @@
+# Notices
+
+okkskin 是**非官方**的 Codex 桌面端换皮肤工具,**与 OpenAI 无隶属、未获其背书或赞助**。
+
+## 致谢
+okkskin 的思路最初受 **Codex-Dream-Skin(MIT)** 启发。实现为原创:
+用 `okkskin launch` 带 `--remote-debugging-address=127.0.0.1 --remote-debugging-port` 启动 Codex,
+经 Chromium DevTools 协议向渲染进程注入主题;配色靠覆盖 Codex 自身的设计变量,壁纸等结构规则固定在 CLI 内。
+
+## 许可
+`LICENSE`(MIT)适用于本仓库源码。不授予:OpenAI/Codex 商标、产品名、logo;官方应用二进制/`.app`/`app.asar`;用户自备图片或第三方美术素材。
+
+## 运行时
+不分发 Node.js;使用用户本机已安装的 Node(>=20)。
+
+## 安全模型
+调试口仅监听 `127.0.0.1`,但在 Codex 整个运行期间保持开启,同机其他进程理论上可连接。仅建议在**个人可信设备**使用。`okkskin disable` / `restore` 可完全移除换肤;不带 `launch` 重启 Codex 即回到原版。

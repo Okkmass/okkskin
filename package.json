@@ -1,0 +1,15 @@
+{
+  "name": "okkskin",
+  "version": "0.3.0",
+  "description": "给 Codex 桌面端换皮肤:经本机调试端口注入主题,不改 app 文件。Skin the Codex desktop app via a local debug port, without modifying the app.",
+  "type": "module",
+  "bin": { "okkskin": "bin/okkskin.mjs" },
+  "engines": { "node": ">=20" },
+  "files": ["bin", "src", "LICENSE", "NOTICE", "README.md"],
+  "scripts": { "test": "node --test" },
+  "repository": { "type": "git", "url": "git+https://github.com/Okkmass/okkskin.git" },
+  "homepage": "https://github.com/Okkmass/okkskin#readme",
+  "bugs": { "url": "https://github.com/Okkmass/okkskin/issues" },
+  "keywords": ["codex", "theme", "skin", "electron", "macos", "cli"],
+  "license": "MIT"
+}
