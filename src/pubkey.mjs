@@ -1,5 +1,5 @@
-// 发布公钥(ed25519, SPKI PEM)。占位 —— 发布前用离线生成的真实公钥替换。
-// 私钥永不进仓库;签 manifest 在离线机器上用 scripts/sign-manifest.mjs 完成。
+// 皮肤 manifest 的 ed25519 验签公钥(SPKI PEM)。
+// 对应私钥只在离线机器上保管,不在仓库中。
 export const OKKSKIN_PUBKEY = process.env.OKKSKIN_PUBKEY_OVERRIDE ||
 `-----BEGIN PUBLIC KEY-----
 MCowBQYDK2VwAyEAsJliUf0LyLC2cS+pjBWf4jshxaiiPulvpvUeQX6sruw=
